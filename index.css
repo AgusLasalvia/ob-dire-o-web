@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+	--main-color: #98ecff;
+	--main-color-darker: #50c1d8;
+
+	--primary-button-color: #0ca9ca;
+	--primary-button-darker: #06788f;
+}
+
+* {
+	/* margin: 0; */
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: Roboto;
+}
+
+header {
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav {
+	display: flex;
+	gap: 12px;
+}
+
+nav a {
+	text-decoration: none;
+	background-color: var(--primary-button-color);
+	color: #fff;
+	padding: 10px 20px;
+
+	border-radius: 5px;
+
+}
+
+nav a:hover {
+	background-color: var(--primary-button-darker);
+}
+
+
+.centrado {
+	/* menor al 100% */
+	width: 90%;
+	margin: 0 auto;
+}
+
+.flex-centrado {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#requerido {
+	color: red;
+}
+
+.flexbox {
+	display: flex;
+}
+
+.row-between {
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* Inicio de CSS del primer Section */
+
+.flex1 {
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 20px;
+	gap: 90px
+}
+
+.flex1 h2 {
+	color: var(--main-color-darker);
+}
+
+.flex1 input[type="text"],
+.flex1 select {
+	border: 2px solid var(--main-color);
+	border-radius: 10px;
+	padding: 10px;
+}
+
+table {
+	width: 30%;
+	border: 2px solid var(--main-color);
+	border-radius: 10px;
+}
+
+th,
+td {
+	padding: 5px;
+	text-align: center;
+	/* border-bottom: 2px solid var(--main-color); */
+
+}
+
+/* Final del primer Section */
+
+/* Inicio del CSS del segundo Section */

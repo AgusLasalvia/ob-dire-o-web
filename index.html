@@ -4,6 +4,131 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agencia de viajes (obligatorio)</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header & Navbar -->
+    <header class="centrado">
+      <a href="">
+        <img src="" alt="Agencia de Viajes" />
+      </a>
+      <nav>
+        <a href="#coritzar">COTIZAR DETSINO</a>
+        <a href="">MÁS PEDIDOS</a>
+        <a href="">NUEVOS DESTINOS</a>
+        <a href="">OFERTAS</a>
+      </nav>
+      <a href="">carrito</a>
+    </header>
+
+    <!-- div flex0 faltante -->
+
+    <section class="flex-centrado flex1" id="cotizar">
+      <div>
+        <h2>COTIZAR DESTINO</h2>
+        <form>
+          <div class="flexbox">
+            <div>
+              <label for="mail">Mail<strong id="requerido">*</strong></label
+              ><br />
+              <input type="text" name="mail" id="" placeholder="" /><br />
+              <label for="">Comentarios<strong id="requerido">*</strong></label
+              ><br />
+              <input id="" type="text" name="" id="" placeholder="" /><br />
+            </div>
+            <div class="row">
+              <div>
+                <input type="radio" name="" id="" value="radio1" />
+                <label for="">Oceo</label>
+                <input type="radio" name="" id="" value="radio2" />
+                <label for="">Negocios</label>
+                <input type="radio" name="" id="" value="radio3" />
+                <label for="">Ambas</label><br />
+              </div>
+
+              <input type="checkbox" name="" id="" />
+              <label for="">Soy cliente<strong id="requerido">*</strong></label
+              ><br />
+
+              <label for="">Pais <strong id="requerido">*</strong></label>
+              <select name="" id="" aria-placeholder="placeholder">
+                <option value="Colombia">Colombia</option>
+              </select>
+            </div>
+          </div>
+          <input type="button" value="Cotizar" />
+        </form>
+      </div>
+      <div>
+        <table id="tabla">
+          <thead>
+            <tr>
+              <th>Pais</th>
+              <th>Ciudad</th>
+              <th>Desde</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Colombia</td>
+              <td>Medellin</td>
+              <td>usd 750</td>
+            </tr>
+            <tr>
+              <td>Brasil</td>
+              <td>Maceió</td>
+              <td>usd 360</td>
+            </tr>
+            <tr>
+              <td>Argentina</td>
+              <td>Rosario</td>
+              <td>usd 230</td>
+            </tr>
+            <tr>
+              <td>México</td>
+              <td>Veracruz</td>
+              <td>usd 680</td>
+            </tr>
+            <tr>
+              <td>Marruecos</td>
+              <td>Marrakech</td>
+              <td>usd 1750</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="flex1"></section>
+    <section class="flex1">
+      <!-- <div class="centrado flexbox">
+        <article>
+          <figure>
+            <img src="img/madrid.jpg" alt="Madrid-España" />
+          </figure>
+          <div>
+            <h2>Overline</h2>
+            <p>Parafo de texto</p>
+            <button type="button">Boton</button>
+          </div>
+        </article>
+        <article>
+          <figure></figure>
+          <div>
+            <h2>Overline</h2>
+            <p>Parafo de texto</p>
+            <button type="button">Boton</button>
+          </div>
+        </article>
+        <article>
+          <figure></figure>
+          <div>
+            <h2>Overline</h2>
+            <p>Parafo de texto</p>
+            <button type="button">Boton</button>
+          </div>
+        </article>
+      </div> -->
+    </section>
+    <section class="flex1"></section>
+  </body>
 </html>
