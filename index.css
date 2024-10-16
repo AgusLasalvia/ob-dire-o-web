@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
+/* Variables */
 :root {
-	--main-color: #98ecff;
-	--main-color-darker: #50c1d8;
 
-	--primary-button-color: #0ca9ca;
-	--primary-button-darker: #06788f;
+	--primary-button-color: #50c1d8;
+	--primary-button-hover: #06788f;
+}
+
+/* Globales */
+body,
+html {
+	width: 100%;
 }
 
 * {
@@ -17,6 +21,7 @@
 	font-family: Roboto;
 }
 
+/* Navbar */
 header {
 	padding-bottom: 10px;
 	display: flex;
@@ -34,13 +39,13 @@ nav a {
 	background-color: var(--primary-button-color);
 	color: #fff;
 	padding: 10px 20px;
-
 	border-radius: 5px;
+	transition: background-color 0.3s ease;
 
 }
 
 nav a:hover {
-	background-color: var(--primary-button-darker);
+	background-color: var(--primary-button-hover);
 }
 
 
@@ -69,29 +74,74 @@ nav a:hover {
 	justify-content: space-between;
 }
 
+/* Botones */
+.button-centrado {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+
+
+.btn {
+	font-size: 14px;
+	font-weight: normal;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+#btn-primario:hover {
+	background-color: var(--primary-button-hover);
+}
+
+#btn-primario {
+	background-color: var(--primary-button-color);
+	color: white;
+}
+
+
+#btn-secundario {
+	background-color: white;
+	color: var(--primary-button-color);
+}
+
+#btn-secundario:hover {
+	background-color: var(--primary-button-hover);
+	color: white;
+}
+
+
+
 /* Inicio de CSS del primer Section */
 
 .flex1 {
-	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
 	justify-content: center;
 	padding-top: 20px;
 	gap: 90px
 }
 
 .flex1 h2 {
-	color: var(--main-color-darker);
+	color: var(--primary-button-color-darker);
 }
 
 .flex1 input[type="text"],
 .flex1 select {
-	border: 2px solid var(--main-color);
+	border: 2px solid var(--primary-button-color);
 	border-radius: 10px;
 	padding: 10px;
 }
 
+
+
 table {
-	width: 30%;
-	border: 2px solid var(--main-color);
+
+	border: 2px solid var(--primary-button-color);
 	border-radius: 10px;
 }
 
@@ -99,10 +149,33 @@ th,
 td {
 	padding: 5px;
 	text-align: center;
-	/* border-bottom: 2px solid var(--main-color); */
+	/* border-bottom: 2px solid var(--primary-button-color); */
 
+}
+
+td {
+	border-top: 2px solid var(--primary-button-color);
 }
 
 /* Final del primer Section */
 
 /* Inicio del CSS del segundo Section */
+.flex2 {
+	display: grid;
+	background-color: #c27d23;
+}
+
+/* Final del segunda Section */
+
+
+/* Footer */
+footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--primary-button-color);
+}
+
+footer p,
+footer i {
+	color: white;
+}
