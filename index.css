@@ -3,14 +3,19 @@
 /* Variables */
 :root {
 
-	--primary-button-color: #50c1d8;
-	--primary-button-hover: #06788f;
+	--primary-color: #50c1d8;
+	--primary-color-darker: #06788f;
+
+
+
 }
 
 /* Globales */
 body,
 html {
 	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 * {
@@ -23,20 +28,22 @@ html {
 
 /* Navbar */
 header {
-	padding-bottom: 10px;
+	padding: 10px 0px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 15px;
 }
 
 nav {
 	display: flex;
 	gap: 12px;
+
 }
 
 nav a {
 	text-decoration: none;
-	background-color: var(--primary-button-color);
+	background-color: var(--primary-color);
 	color: #fff;
 	padding: 10px 20px;
 	border-radius: 5px;
@@ -45,15 +52,18 @@ nav a {
 }
 
 nav a:hover {
-	background-color: var(--primary-button-hover);
+	background-color: var(--primary-color-darker);
 }
 
-
-.centrado {
-	/* menor al 100% */
-	width: 90%;
-	margin: 0 auto;
+section {
+	padding: 40px;
 }
+
+section img {
+	object-fit: cover;
+	width: 100%;
+}
+
 
 .flex-centrado {
 	display: flex;
@@ -94,23 +104,26 @@ nav a:hover {
 	transition: background-color 0.3s ease;
 }
 
-#btn-primario:hover {
-	background-color: var(--primary-button-hover);
-}
 
 #btn-primario {
-	background-color: var(--primary-button-color);
+	background-color: var(--primary-color);
 	color: white;
 }
 
-
 #btn-secundario {
 	background-color: white;
-	color: var(--primary-button-color);
+	color: var(--primary-color);
 }
 
+
+/* Button hover efecto */
+#btn-primario:hover {
+	background-color: var(--primary-color-darker);
+}
+
+
 #btn-secundario:hover {
-	background-color: var(--primary-button-hover);
+	background-color: var(--primary-color-darker);
 	color: white;
 }
 
@@ -127,21 +140,43 @@ nav a:hover {
 }
 
 .flex1 h2 {
-	color: var(--primary-button-color-darker);
+	color: var(--primary-color-darker);
 }
 
 .flex1 input[type="text"],
 .flex1 select {
-	border: 2px solid var(--primary-button-color);
+	height: 40px;
+	width: 250px;
+	border: 2px solid var(--primary-color);
 	border-radius: 10px;
 	padding: 10px;
 }
 
+.flex1 textarea {
+	height: 107px;
+	width: 250px;
+	border: 2px solid var(--primary-color);
+	border-radius: 10px;
+}
+
+.flex1 .column {
+	margin-top: 20px;
+	margin-left: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.flex1 .column select {
+	margin-bottom: 5px;
+}
 
 
+/* CSS para el apartado de la tabla en cotizacion */
 table {
 
-	border: 2px solid var(--primary-button-color);
+	border: 2px solid var(--primary-color);
 	border-radius: 10px;
 }
 
@@ -149,33 +184,135 @@ th,
 td {
 	padding: 5px;
 	text-align: center;
-	/* border-bottom: 2px solid var(--primary-button-color); */
 
 }
 
 td {
-	border-top: 2px solid var(--primary-button-color);
+	border-top: 2px solid var(--primary-color);
 }
+
+/* Final CSS para el apartado de la tabla en cotizacion */
 
 /* Final del primer Section */
 
 /* Inicio del CSS del segundo Section */
-.flex2 {
+.grilla {
 	display: grid;
-	background-color: #c27d23;
+	gap: 30px;
+	background-color: rgb(251, 136, 20);
+
+}
+
+.grilla h2 {
+	grid-column: 1 / span 4;
+	grid-column: 1 / 5;
+	text-align: start;
+}
+
+.grilla article {
+	background-color: white;
+	border-radius: 5px;
+
+}
+
+.grilla article img {
+	border-radius: 5px 5px 0 0;
+}
+
+.grilla article div {
+	padding: 10px;
+}
+
+.grilla {
+	grid-template: auto repeat(1, 1fr) / repeat(4, 1fr);
+
+}
+
+
+.grilla h2 {
+	grid-column: 1/ span 4;
+}
+
+.grilla article:nth-of-type(1) {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	grid-column: 1/ span 2;
+
+}
+
+.grilla article:nth-of-type(1)>* {
+	height: calc((100% - 15px / 2));
+}
+
+.grilla article:nth-of-type(1)>div {
+	margin: 20px;
+}
+
+
+.grilla article:nth-of-type(1) img {
+	object-fit: cover;
+	height: 90px;
+}
+
+
+
+.grilla article:nth-of-type(2) {
+
+	background: url(img/kyoto.jpg) center center;
+	background-size: cover;
+	color: white;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+
+.grilla article:nth-of-type(3) {
+
+	grid-row: 2 / 4;
+	grid-column: 4 / 4;
+
+}
+
+.grilla article:nth-of-type(3)>img {
+	height: 275px;
+}
+
+
+
+.grilla article:nth-of-type(4)>button {
+	margin: 10px;
+}
+
+.grilla article:nth-of-type(4) h4 {
+	color: grey;
+}
+
+
+.grilla article:nth-of-type(5) {
+	display: flex;
+	grid-column: 2/ span 2;
+}
+
+.grilla article:nth-of-type(5) img {
+	width: 300px;
+	border-radius: 5px 0 0 5px;
 }
 
 /* Final del segunda Section */
+/* Inicio de la tercera Section */
+/* Final del tercera Section */
 
 
 /* Footer */
 footer {
 	display: flex;
 	justify-content: space-between;
-	background-color: var(--primary-button-color);
+	background-color: var(--primary-color);
 }
 
 footer p,
 footer i {
+	margin: 15px;
 	color: white;
 }

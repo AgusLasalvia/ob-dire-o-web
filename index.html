@@ -8,13 +8,13 @@
   </head>
   <body>
     <!-- Header & Navbar -->
-    <header class="centrado">
+    <header>
       <a href="">
         <img src="" alt="Agencia de Viajes" />
       </a>
       <nav>
         <a href="#coritzar">COTIZAR DETSINO</a>
-        <a href="">MÁS PEDIDOS</a>
+        <a href="#pedidos">MÁS PEDIDOS</a>
         <a href="">NUEVOS DESTINOS</a>
         <a href="">OFERTAS</a>
       </nav>
@@ -24,9 +24,9 @@
     <!-- div flex0 faltante -->
 
     <section class="flex-centrado flex1" id="cotizar">
-      <div>
-        <h2>COTIZAR DESTINO</h2>
+      <article>
         <form>
+          <h2>COTIZAR DESTINO</h2>
           <div class="flexbox">
             <div>
               <label for="mail">Mail<strong id="requerido">*</strong></label
@@ -40,16 +40,9 @@
               /><br />
               <label for="">Comentarios<strong id="requerido">*</strong></label
               ><br />
-              <input
-                id=""
-                type="text"
-                name=""
-                id=""
-                placeholder=""
-                required
-              /><br />
+              <textarea name="" id=""></textarea>
             </div>
-            <div class="row">
+            <div class="column">
               <div>
                 <input type="radio" name="" id="" value="radio1" />
                 <label for="">Oceo</label>
@@ -58,15 +51,19 @@
                 <input type="radio" name="" id="" value="radio3" />
                 <label for="">Ambas</label><br />
               </div>
-
-              <input type="checkbox" name="" id="" />
-              <label for="">Soy cliente<strong id="requerido">*</strong></label
-              ><br />
-
-              <label for="">Pais <strong id="requerido">*</strong></label>
-              <select name="" id="" aria-placeholder="placeholder" required>
-                <option value="Colombia">Colombia</option>
-              </select>
+              <div>
+                <input type="checkbox" name="" id="" />
+                <label for=""
+                  >Soy cliente<strong id="requerido">*</strong></label
+                ><br />
+              </div>
+              <div>
+                <label for="">Pais <strong id="requerido">*</strong></label
+                ><br />
+                <select name="" id="" aria-placeholder="placeholder" required>
+                  <option value="Colombia">Colombia</option>
+                </select>
+              </div>
             </div>
           </div>
           <div class="button-centrado">
@@ -78,7 +75,7 @@
             />
           </div>
         </form>
-      </div>
+      </article>
       <div>
         <table id="tabla">
           <thead>
@@ -118,47 +115,62 @@
         </table>
       </div>
     </section>
-    <section class="flex2">
+    <section id="pedidos" class="centrado grilla">
       <h2>MÁS PEDIDOS</h2>
       <article>
-        <figure></figure>
-        <h3>Cartagenas de Indias</h3>
-        <p>Una joya histórica ubicada en la costa caribeña de Colombia</p>
+        <img src="/img/madrid.jpg" alt="Madrid" />
 
-        <button id="btn-primario" class="btn">SABER MÁS</button>
+        <div>
+          <h3>Madrid</h3>
+          <p>Madrid, corazón vibrante de España.</p>
+          <button id="btn-primario" class="btn">Saber más</button>
+        </div>
       </article>
       <article>
-        <figure>
-          <h3>Bora Bora</h3>
-          <h4>Polinesia Francesa</h4>
-        </figure>
+        <div>
+          <h3>Kyoto</h3>
+          <p>Ciudad histórica de templos y jardines tradicionales.</p>
+        </div>
       </article>
       <article>
-        <figure></figure>
-        <h3>Luang Prabang</h3>
-        <h4>Laos</h4>
-        <p>
-          Conocida por su bien conservado patrimonio arquitectónico y su
-          ambiente tranqui, La ciudad, ubicada a orillas del rio Mekong, cuenta
-          con una gran cantidad de templos budistas, como Wat Xieng Thong, y
-          ofrece una experiencia única con sus rituales matutinos de ofrendas de
-          monjes.
-        </p>
+        <img src="/img/santorini.jpeg" alt="Santorini" />
+        <div>
+          <h3>Santorini</h3>
+          <p>
+            Santorini es una isla griega famosa por sus casas blancas, techos
+            azules y espectaculares puestas de sol. Su paisaje volcánico y
+            playas de arena negra la convierten en un destino ideal para
+            románticos y amantes de la cultura.
+          </p>
+          <button id="btn-primario" class="btn">Saber Mas</button>
+        </div>
       </article>
       <article>
-        <figure></figure>
+        <div>
+          <h3>Dubrovnik</h3>
+          <h4>La Perla del Adriático</h4>
+          <p>
+            Conocida como la "Perla del Adriático", esta ciudad croata destaca
+            por sus impresionantes murallas medievales, calles empedradas y
+            vistas al mar.
+          </p>
+        </div>
+        <button class="btn" id="btn-primario">Saber Mas</button>
       </article>
       <article>
-        <figure></figure>
-      </article>
-      <article>
-        <figure></figure>
-      </article>
-      <article>
-        <h3>Kyoto</h3>
-      </article>
-      <article>
-        <figure></figure>
+        <img src="/img/petra.jpg" alt="Petra" />
+        <div>
+          <div>
+            <h3>Petra</h3>
+            <p>
+              Una antigua ciudad nabatea en Jordania, famosa por su arquitectura
+              tallada en roca roja y su impresionante tesorería, rodeada de
+              montañas y cañones, que la convierten en un sitio arqueológico
+              fascinante.
+            </p>
+          </div>
+          <button class="btn" id="btn-primario">Saber Mas</button>
+        </div>
       </article>
     </section>
     <section class="flex3"></section>
