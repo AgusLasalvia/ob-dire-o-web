@@ -7,8 +7,9 @@
 	--primary-color-darker: #06788f;
 
 
-
 }
+
+
 
 /* Globales */
 body,
@@ -55,6 +56,12 @@ nav a:hover {
 	background-color: var(--primary-color-darker);
 }
 
+header a:nth-of-type(2) img{
+	width: 25px;
+}
+
+/* FIN Navbar & Header */
+
 section {
 	padding: 40px;
 }
@@ -63,6 +70,7 @@ section img {
 	object-fit: cover;
 	width: 100%;
 }
+
 
 
 .flex-centrado {
@@ -230,6 +238,7 @@ td {
 
 
 .grilla h2 {
+	color: white;
 	grid-column: 1/ span 4;
 }
 
@@ -306,7 +315,6 @@ td {
 
 /* Footer */
 footer {
-	display: flex;
 	justify-content: space-between;
 	background-color: var(--primary-color);
 }
