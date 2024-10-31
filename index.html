@@ -1,187 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agencia de viajes (obligatorio)</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <!-- Header & Navbar -->
-    <header>
-      <a href="">
-        <img src="" alt="Agencia de Viajes" />
-      </a>
-      <nav>
-        <a href="#coritzar">COTIZAR DETSINO</a>
-        <a href="#pedidos">MÁS PEDIDOS</a>
-        <a href="">NUEVOS DESTINOS</a>
-        <a href="">OFERTAS</a>
-      </nav>
-      <a href=""><img src="/img/carrito.png" alt="" /></a>
-    </header>
 
-    <!-- div flex0 faltante -->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Agencia de viajes (obligatorio)</title>
+	<link rel="stylesheet" href="index.css" />
+</head>
 
-    <section class="flex-centrado flex1" id="cotizar">
-      <article>
-        <form>
-          <h2>COTIZAR DESTINO</h2>
-          <div class="flexbox">
-            <div>
-              <label for="mail">Mail<strong id="requerido">*</strong></label
-              ><br />
-              <input
-                type="text"
-                name="mail"
-                id=""
-                placeholder=""
-                required
-              /><br />
-              <label for="">Comentarios<strong id="requerido">*</strong></label
-              ><br />
-              <textarea name="" id=""></textarea>
-            </div>
-            <div class="column">
-              <div>
-                <input type="radio" name="" id="" value="radio1" />
-                <label for="">Oceo</label>
-                <input type="radio" name="" id="" value="radio2" />
-                <label for="">Negocios</label>
-                <input type="radio" name="" id="" value="radio3" />
-                <label for="">Ambas</label><br />
-              </div>
-              <div>
-                <input type="checkbox" name="" id="" />
-                <label for=""
-                  >Soy cliente<strong id="requerido">*</strong></label
-                ><br />
-              </div>
-              <div>
-                <label for="">Pais <strong id="requerido">*</strong></label
-                ><br />
-                <select name="" id="" aria-placeholder="placeholder" required>
-                  <option value="Colombia">Colombia</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="button-centrado">
-            <input
-              id="btn-primario"
-              class="btn"
-              type="button"
-              value="Cotizar"
-            />
-          </div>
-        </form>
-      </article>
-      <div>
-        <table id="tabla">
-          <thead>
-            <tr>
-              <th>Pais</th>
-              <th>Ciudad</th>
-              <th>Desde</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Colombia</td>
-              <td>Medellin</td>
-              <td>usd 750</td>
-            </tr>
-            <tr>
-              <td>Brasil</td>
-              <td>Maceió</td>
-              <td>usd 360</td>
-            </tr>
-            <tr>
-              <td>Argentina</td>
-              <td>Rosario</td>
-              <td>usd 230</td>
-            </tr>
-            <tr>
-              <td>México</td>
-              <td>Veracruz</td>
-              <td>usd 680</td>
-            </tr>
-            <tr>
-              <td>Marruecos</td>
-              <td>Marrakech</td>
-              <td>usd 1750</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <section id="pedidos" class="centrado grilla">
-      <h2>MÁS PEDIDOS</h2>
-      <article>
-        <img src="/img/madrid.jpg" alt="Madrid" />
+<body>
+	<div>
+		<!-- Header & Navbar -->
+		<header>
+			<a href="#">
+				<img src="" alt="Agencia de Viajes" />
+			</a>
+			<nav>
+				<a href="#coritzar">COTIZAR DETSINO</a>
+				<a href="#pedidos">MÁS PEDIDOS</a>
+				<a href="#nuevos-destinos">NUEVOS DESTINOS</a>
+				<a href="#ofertas">OFERTAS</a>
+			</nav>
+			<a href=""><img src="/assets/icons/carrito.png" alt="" /></a>
+		</header>
 
-        <div>
-          <h3>Madrid</h3>
-          <p>Madrid, corazón vibrante de España.</p>
-          <button id="btn-primario" class="btn">Saber más</button>
-        </div>
-      </article>
-      <article>
-        <div>
-          <h3>Kyoto</h3>
-          <p>Ciudad histórica de templos y jardines tradicionales.</p>
-        </div>
-      </article>
-      <article>
-        <img src="/img/santorini.jpeg" alt="Santorini" />
-        <div>
-          <h3>Santorini</h3>
-          <p>
-            Santorini es una isla griega famosa por sus casas blancas, techos
-            azules y espectaculares puestas de sol. Su paisaje volcánico y
-            playas de arena negra la convierten en un destino ideal para
-            románticos y amantes de la cultura.
-          </p>
-          <button id="btn-primario" class="btn">Saber Mas</button>
-        </div>
-      </article>
-      <article>
-        <div>
-          <h3>Dubrovnik</h3>
-          <h4>La Perla del Adriático</h4>
-          <p>
-            Conocida como la "Perla del Adriático", esta ciudad croata destaca
-            por sus impresionantes murallas medievales, calles empedradas y
-            vistas al mar.
-          </p>
-        </div>
-        <button class="btn" id="btn-primario">Saber Mas</button>
-      </article>
-      <article>
-        <img src="/img/petra.jpg" alt="Petra" />
-        <div>
-          <div>
-            <h3>Petra</h3>
-            <p>
-              Una antigua ciudad nabatea en Jordania, famosa por su arquitectura
-              tallada en roca roja y su impresionante tesorería, rodeada de
-              montañas y cañones, que la convierten en un sitio arqueológico
-              fascinante.
-            </p>
-          </div>
-          <button class="btn" id="btn-primario">Saber Mas</button>
-        </div>
-      </article>
-    </section>
-    <section class="flex3"></section>
-    <section class=""></section>
-    <footer class="flexbox">
-      <p>Realizado por Agustin Lasalvia en base al ejemplo</p>
-      <div>
-        <a href="/"><i></i></a>
-        <a href="/"><i></i></a>
-        <a href="/"><i></i></a>
-      </div>
-    </footer>
-  </body>
+		<!-- div flex0 faltante (HERO) -->
+
+		<!-- Select #1 -->
+		<section class="flex-centrado flex1" id="cotizar">
+			<article>
+				<form id="cotizacion">
+					<h2>COTIZAR DESTINO</h2>
+					<div class="flexbox">
+						<div>
+							<label for="mail">Mail<strong id="requerido">*</strong></label><br />
+							<input type="text" name="mail" id="" placeholder="" required /><br />
+							<label for="">Comentarios<strong id="requerido">*</strong></label><br />
+							<textarea name="" id=""></textarea>
+						</div>
+						<div class="column">
+							<div>
+								<input type="radio" name="" id="" value="radio1" />
+								<label for="">Oceo</label>
+								<input type="radio" name="" id="" value="radio2" />
+								<label for="">Negocios</label>
+								<input type="radio" name="" id="" value="radio3" />
+								<label for="">Ambas</label><br />
+							</div>
+							<div>
+								<input type="checkbox" name="" id="" />
+								<label for="">Soy cliente<strong id="requerido">*</strong></label><br />
+							</div>
+							<div>
+								<label for="">Pais <strong id="requerido">*</strong></label><br />
+								<select name="" id="" aria-placeholder="placeholder" required>
+									<option value="Colombia">Colombia</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="button-centrado">
+						<input id="btn-primario" class="btn" type="button" value="Cotizar" form="cotizacion" />
+					</div>
+				</form>
+			</article>
+			<div>
+				<table id="tabla">
+					<thead>
+						<tr>
+							<th>Pais</th>
+							<th>Ciudad</th>
+							<th>Desde</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Colombia</td>
+							<td>Medellin</td>
+							<td>usd 750</td>
+						</tr>
+						<tr>
+							<td>Brasil</td>
+							<td>Maceió</td>
+							<td>usd 360</td>
+						</tr>
+						<tr>
+							<td>Argentina</td>
+							<td>Rosario</td>
+							<td>usd 230</td>
+						</tr>
+						<tr>
+							<td>México</td>
+							<td>Veracruz</td>
+							<td>usd 680</td>
+						</tr>
+						<tr>
+							<td>Marruecos</td>
+							<td>Marrakech</td>
+							<td>usd 1750</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<!-- Select #2 -->
+		<section id="pedidos" class="centrado grilla">
+
+			<h2>MÁS PEDIDOS</h2>
+			<article>
+				<img src="/assets/img/madrid.jpg" alt="Madrid" />
+
+				<div>
+					<h3>Madrid</h3>
+					<p>Madrid, corazón vibrante de España.</p>
+					<button id="btn-primario" class="btn">Saber más</button>
+				</div>
+			</article>
+			<article>
+				<div>
+					<h3>Kyoto</h3>
+					<p>Ciudad histórica de templos y jardines tradicionales.</p>
+				</div>
+			</article>
+			<article>
+				<img src="/assets/img/santorini.jpeg" alt="Santorini" />
+				<div>
+					<div>
+						<h3>Santorini</h3>
+						<p>
+							Santorini es una isla griega famosa por sus casas blancas,
+							techos azules y espectaculares puestas de sol. Su paisaje
+							volcánico y playas de arena negra la convierten en un destino
+							ideal para románticos y amantes de la cultura.
+						</p>
+					</div>
+					<div>
+						<button id="btn-primario" class="btn">Saber Mas</button>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div>
+					<h3>Dubrovnik</h3>
+					<h4>La Perla del Adriático</h4>
+					<p>
+						Conocida como la "Perla del Adriático", esta ciudad croata destaca
+						por sus impresionantes murallas medievales, calles empedradas y
+						vistas al mar.
+					</p>
+				</div>
+				<button class="btn" id="btn-primario">Saber Mas</button>
+			</article>
+			<article>
+				<img src="/assets/img/petra.jpg" alt="Petra" />
+				<div>
+					<div>
+						<h3>Petra</h3>
+						<p>
+							Una antigua ciudad nabatea en Jordania, famosa por su
+							arquitectura tallada en roca roja y su impresionante tesorería,
+							rodeada de montañas y cañones, que la convierten en un sitio
+							arqueológico fascinante.
+						</p>
+					</div>
+					<div>
+						<button class="btn" id="btn-primario">Saber Mas</button>
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<!-- Select #3 -->
+		<section class="flex3">
+			<div class="centrado-no-flex">
+				<h2>Nuevos Destinos</h2>
+				<article>
+					<img src="/assets/img/roma.jpg" alt="Roma" />
+					<div>
+						<div>
+							<p>Italia</p>
+							<h3>Roma</h3>
+							<p>La capital italiana es un verdadero museo al aire libre, repleta de historia y cultura. Desde el
+								Coliseo
+								hasta el Vaticano, pasando por la Fontana di Trevi y el Panteón, Roma es un destino fascinante que
+								combina arte, historia y una deliciosa gastronomía. Perderse por sus calles es una experiencia única.
+							</p>
+						</div>
+						<button href="" id="btn-secundario" class="btn">Saber Mas</button>
+					</div>
+				</article>
+				<article>
+					<img src="/assets/img/barcelona.jpeg" alt="barcelona" />
+					<div>
+						<div>
+							<p>España</p>
+							<h3>Barcelona</h3>
+							<p>Esta vibrante ciudad es conocida por su arquitectura modernista, especialmente las obras de Antoni
+								Gaudí, como la Sagrada Familia y el Parque Güell. Además, Barcelona ofrece hermosas playas, una rica
+								vida cultural y deliciosa gastronomía, lo que la convierte en un destino ideal para explorar.</p>
+
+						</div>
+						<button href="" id="btn-secundario" class="btn">Saber Mas</button>
+					</div>
+				</article>
+				<article>
+					<img src="/assets/img/queenstown.jpg" alt="queenstown" />
+					<div>
+						<div>
+							<p>Nueva Zelanda</p>
+							<h3>Queenstown</h3>
+							<p>Situada en la Isla Sur, Queenstown es famosa por sus impresionantes paisajes montañosos y su ambiente
+								aventurero. Es un paraíso para los amantes de los deportes al aire libre, con actividades como esquí,
+								senderismo y bungee jumping. Además, ofrece una rica oferta de vinos y una vibrante vida nocturna.</p>
+						</div>
+						<button id="btn-secundario" class="btn">Saber Mas</button>
+
+					</div>
+				</article>
+			</div>
+		</section>
+		<section class=""></section>
+		<footer class="flexbox">
+			<p>Realizado por Agustin Lasalvia en base al ejemplo</p>
+			<div>
+				<a href="/"><img src="/assets/icons/instagram.png" alt=""></a>
+				<a href="/"><img src="/assets/icons/x.png" alt=""></a>
+				<a href="/"><img src="/assets/icons/correo.png" alt=""></a>
+			</div>
+		</footer>
+
+</body>
+
 </html>
