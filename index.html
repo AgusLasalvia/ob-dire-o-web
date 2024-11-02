@@ -29,7 +29,7 @@
 		<!-- Select #1 -->
 		<section class="flex-centrado flex1" id="cotizar">
 			<article>
-				<form id="cotizacion">
+				<form id="cotizacion" class="centrado-no-flex">
 					<h2>COTIZAR DESTINO</h2>
 					<div class="flexbox">
 						<div>
@@ -54,13 +54,21 @@
 							<div>
 								<label for="">Pais <strong id="requerido">*</strong></label><br />
 								<select name="" id="" aria-placeholder="placeholder" required>
-									<option value="Colombia">Colombia</option>
+									<option value="">Selecciona un país</option>
+									<option value="colombia">Colombia</option>
+									<option value="argentina">Argentina</option>
+									<option value="brasil">Brasil</option>
+									<option value="mexico">México</option>
+									<option value="chile">Chile</option>
+									<option value="peru">Perú</option>
+									<option value="espana">España</option>
+									<option value="francia">Francia</option>
 								</select>
 							</div>
 						</div>
 					</div>
 					<div class="button-centrado">
-						<input id="btn-primario" class="btn" type="button" value="Cotizar" form="cotizacion" />
+						<input class="btn btn-primario" type="button" value="Cotizar" form="cotizacion" />
 					</div>
 				</form>
 			</article>
@@ -105,7 +113,7 @@
 		</section>
 
 		<!-- Select #2 -->
-		<section id="pedidos" class="centrado grilla">
+		<section id="pedidos" class="centrado grilla1">
 
 			<h2>MÁS PEDIDOS</h2>
 			<article>
@@ -114,7 +122,7 @@
 				<div>
 					<h3>Madrid</h3>
 					<p>Madrid, corazón vibrante de España.</p>
-					<button id="btn-primario" class="btn">Saber más</button>
+					<button class="btn btn-primario">Saber más</button>
 				</div>
 			</article>
 			<article>
@@ -136,7 +144,7 @@
 						</p>
 					</div>
 					<div>
-						<button id="btn-primario" class="btn">Saber Mas</button>
+						<button id="" class="btn btn-primario">Saber Mas</button>
 					</div>
 				</div>
 			</article>
@@ -150,7 +158,7 @@
 						vistas al mar.
 					</p>
 				</div>
-				<button class="btn" id="btn-primario">Saber Mas</button>
+				<button class="btn btn-primario">Saber Mas</button>
 			</article>
 			<article>
 				<img src="/assets/img/petra.jpg" alt="Petra" />
@@ -165,7 +173,7 @@
 						</p>
 					</div>
 					<div>
-						<button class="btn" id="btn-primario">Saber Mas</button>
+						<button class="btn btn-primario">Saber Mas</button>
 					</div>
 				</div>
 			</article>
@@ -187,11 +195,11 @@
 								combina arte, historia y una deliciosa gastronomía. Perderse por sus calles es una experiencia única.
 							</p>
 						</div>
-						<button href="" id="btn-secundario" class="btn">Saber Mas</button>
+						<button class="btn btn-secundario">Saber Mas</button>
 					</div>
 				</article>
 				<article>
-					<img src="/assets/img/barcelona.jpeg" alt="barcelona" />
+					<img src="/assets/img/barcelona.jpeg" alt="Barcelona" />
 					<div>
 						<div>
 							<p>España</p>
@@ -201,11 +209,11 @@
 								vida cultural y deliciosa gastronomía, lo que la convierte en un destino ideal para explorar.</p>
 
 						</div>
-						<button href="" id="btn-secundario" class="btn">Saber Mas</button>
+						<button class="btn btn-secundario">Saber Mas</button>
 					</div>
 				</article>
 				<article>
-					<img src="/assets/img/queenstown.jpg" alt="queenstown" />
+					<img src="/assets/img/queenstown.jpg" alt="Queenstown" />
 					<div>
 						<div>
 							<p>Nueva Zelanda</p>
@@ -214,19 +222,47 @@
 								aventurero. Es un paraíso para los amantes de los deportes al aire libre, con actividades como esquí,
 								senderismo y bungee jumping. Además, ofrece una rica oferta de vinos y una vibrante vida nocturna.</p>
 						</div>
-						<button id="btn-secundario" class="btn">Saber Mas</button>
+						<button class="btn btn-secundario">Saber Mas</button>
 
 					</div>
 				</article>
 			</div>
 		</section>
-		<section class=""></section>
+		<section class="grilla2 ">
+			<h2>Ofertas</h2>
+			<article>
+
+				<img src="/assets/img/new york.jpeg" alt="New York">
+				<div>
+					<h3>Nueva York</h3>
+					<p>Nueva York, conocida como la "Gran Manzana", es una de las ciudades más emblemáticas del mundo. Famosa
+						por su vibrante cultura, rascacielos icónicos como el Empire State Building y la Estatua de la Libertad,
+						Nueva York es un crisol de culturas. Puedes explorar barrios diversos como Manhattan, Brooklyn y Queens,
+						disfrutar de espectáculos en Broadway, visitar museos de renombre como el MET y el MoMA, y saborear una
+						variedad de opciones gastronómicas de todo el mundo.</p>
+					<button class="btn btn-secundario">Saber Mas</button>
+				</div>
+			</article>
+			<article>
+				<img src="/assets/img/buenos aires.png" alt="Buenos Aires">
+				<div>
+					<h3>Buenos Aires</h3>
+					<p>Buenos Aires, la capital argentina, es una ciudad llena de energía y vida. Conocida por su arquitectura
+						europea, el tango y su rica vida cultural, ofrece una mezcla única de tradición y modernidad. Puedes
+						pasear por el histórico barrio de San Telmo, disfrutar de la elegancia de la Recoleta, o explorar la
+						vibrante cultura de La Boca. La ciudad también es famosa por su gastronomía, especialmente por sus asados
+						y empanadas, lo que la convierte en un destino ideal para los amantes de la comida.</p>
+					<button class="btn btn-secundario">Saber Mas</button>
+				</div>
+			</article>
+
+		</section>
 		<footer class="flexbox">
 			<p>Realizado por Agustin Lasalvia en base al ejemplo</p>
 			<div>
-				<a href="/"><img src="/assets/icons/instagram.png" alt=""></a>
-				<a href="/"><img src="/assets/icons/x.png" alt=""></a>
-				<a href="/"><img src="/assets/icons/correo.png" alt=""></a>
+				<a href="/"><img src="/assets/icons/instagram.png" alt="Instagram"></a>
+				<a href="/"><img src="/assets/icons/x.png" alt="X"></a>
+				<a href="/"><img src="/assets/icons/correo.png" alt="Correo"></a>
 			</div>
 		</footer>
 

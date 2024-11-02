@@ -4,6 +4,8 @@
 :root {
 	--primary-color: #50c1d8;
 	--primary-color-darker: #06788f;
+
+	--max-width: 1280px
 }
 
 
@@ -14,6 +16,7 @@ html {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+
 }
 
 
@@ -64,7 +67,7 @@ header a:nth-of-type(2) img {
 
 
 section {
-	padding: 50px;
+	padding: 70px;
 }
 
 section img {
@@ -82,7 +85,7 @@ section img {
 }
 
 .centrado-no-flex {
-	max-width: 1280px;
+	max-width: var(--max-width);
 	margin: 0 auto;
 	padding: 0 20px;
 
@@ -126,24 +129,24 @@ section img {
 
 
 
-#btn-primario {
+.btn-primario {
 	background-color: var(--primary-color);
 	color: white;
 }
 
-#btn-secundario {
+.btn-secundario {
 	background-color: white;
 	color: var(--primary-color);
 }
 
 
 /* Button hover efecto */
-#btn-primario:hover {
+.btn-primario:hover {
 	background-color: var(--primary-color-darker);
 }
 
 
-#btn-secundario:hover {
+.btn-secundario:hover {
 	background-color: var(--primary-color-darker);
 	color: white;
 }
@@ -221,51 +224,49 @@ td {
 
 /* Inicio del CSS del segundo Section */
 
-.grilla {
+.grilla1 {
 	display: grid;
 	gap: 30px;
 	background-color: rgb(251, 136, 20);
-
-
 }
 
 
-.grilla h2 {
+.grilla1 h2 {
 	grid-column: 1 / span 4;
 	grid-column: 1 / 5;
 	text-align: start;
 }
 
-.grilla article {
+.grilla1 article {
 	background-color: white;
 	border-radius: 5px;
 	transition: transform 0.3s ease;
 
 }
 
-.grilla article:hover {
+.grilla1 article:hover {
 	transform: scale(1.05);
 }
 
-.grilla article img {
+.grilla1 article img {
 	border-radius: 5px 5px 0 0;
 }
 
-.grilla article div {
+.grilla1 article div {
 	padding: 10px;
 }
 
-.grilla {
+.grilla1 {
 	grid-template: auto repeat(1, 1fr) / repeat(4, 1fr);
 
 }
 
-.grilla h2 {
+.grilla1 h2 {
 	color: white;
 	grid-column: 1/ span 4;
 }
 
-.grilla article:nth-of-type(1) {
+.grilla1 article:nth-of-type(1) {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
@@ -273,21 +274,21 @@ td {
 
 }
 
-.grilla article:nth-of-type(1)>* {
+.grilla1 article:nth-of-type(1)>* {
 	height: calc((100% - 15px / 2));
 }
 
-.grilla article:nth-of-type(1)>div {
+.grilla1 article:nth-of-type(1)>div {
 	margin: 20px;
 }
 
 
-.grilla article:nth-of-type(1) img {
+.grilla1 article:nth-of-type(1) img {
 	object-fit: cover;
 	height: 90px;
 }
 
-.grilla article:nth-of-type(2) {
+.grilla1 article:nth-of-type(2) {
 
 	background: url(assets/img/kyoto.jpg) center center;
 	background-size: cover;
@@ -297,35 +298,35 @@ td {
 	flex-direction: column;
 }
 
-.grilla article:nth-of-type(3) {
+.grilla1 article:nth-of-type(3) {
 
 	grid-row: 2 / 4;
 	grid-column: 4 / 4;
 
 }
 
-.grilla article:nth-of-type(3)>img {
+.grilla1 article:nth-of-type(3)>img {
 	height: 275px;
 }
 
 
 
 
-.grilla article:nth-of-type(4)>button {
+.grilla1 article:nth-of-type(4)>button {
 	margin: 10px;
 }
 
-.grilla article:nth-of-type(4) h4 {
+.grilla1 article:nth-of-type(4) h4 {
 	color: grey;
 }
 
 
-.grilla article:nth-of-type(5) {
+.grilla1 article:nth-of-type(5) {
 	display: flex;
 	grid-column: 2/ span 2;
 }
 
-.grilla article:nth-of-type(5) img {
+.grilla1 article:nth-of-type(5) img {
 	width: 300px;
 	border-radius: 5px 0 0 5px;
 }
@@ -368,7 +369,7 @@ td {
 }
 
 .flex3 article>img {
-	width: 45%;
+	width: 450px;
 	height: 100%;
 	margin-right: 20px;
 	border-radius: 20px 0 0 20px;
@@ -382,6 +383,56 @@ td {
 
 
 /* Final del tercera Section */
+
+
+/* Inicio del cuarto Section */
+.grilla2 {
+	display: grid;
+	gap: 30px;
+	background-image: url(/assets/img/orange-blue-background.png);
+	background-size: cover;
+}
+
+.grilla2 {
+	grid-template: auto repeat(1, 1fr) / repeat(2, 1fr);
+
+}
+
+.grilla2 article {
+	display: flex;
+	width: 100%;
+	max-width: var(--max-width);
+}
+
+.grilla2 h2 {
+	grid-column: 1 / span 4;
+	grid-column: 1 / 5;
+	text-align: start;
+}
+
+.grilla2 img {
+	width: 350px;
+	border: 15px solid white;
+	object-fit: cover;
+	margin-right: 15px;
+}
+
+.grilla2 h2,
+.grilla2 h3,
+.grilla2 p {
+	color: white;
+}
+
+.grilla2 p {
+	font-size: 13px;
+}
+
+.grilla2 article>div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 
 
 /* Footer */
