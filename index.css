@@ -345,7 +345,19 @@ td {
 
 .flex3 h2 {
 	color: var(--primary-color);
+
 }
+
+.flex3 div>div {
+	margin-top: 15px;
+	color: white;
+}
+
+.flex3 h3,
+.flex3 p {
+	margin: 5px;
+}
+
 
 .flex3 article {
 	width: 100%;
@@ -387,6 +399,7 @@ td {
 
 /* Inicio del cuarto Section */
 .grilla2 {
+
 	display: grid;
 	gap: 30px;
 	background-image: url(/assets/img/orange-blue-background.png);
