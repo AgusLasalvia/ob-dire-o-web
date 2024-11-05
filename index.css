@@ -38,6 +38,11 @@ header {
 	padding: 15px;
 }
 
+header img {
+	width: 110px;
+	;
+}
+
 nav {
 	display: flex;
 	gap: 12px;
@@ -68,6 +73,7 @@ header a:nth-of-type(2) img {
 
 section {
 	padding: 70px;
+	min-height: 700px;
 }
 
 section img {
@@ -99,10 +105,6 @@ section img {
 	display: flex;
 }
 
-.row-between {
-	flex-direction: column;
-	justify-content: space-between;
-}
 
 /* Botones */
 .button-centrado {
@@ -152,6 +154,34 @@ section img {
 }
 
 
+/* HERO */
+
+#HERO {
+	background-image: url(./assets/img/hero.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 57rem;
+	align-items: end;
+}
+
+#HERO>div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+	height: 120px;
+	border-radius: 10px;
+
+	background-color: var(--primary-color);
+	color: white;
+}
+
+#HERO div>h2 {
+	width: 50%;
+	padding: 20px;
+}
+
+/* FIN HERO */
 
 /* Inicio de CSS del primer Section */
 
@@ -206,7 +236,7 @@ table {
 
 th,
 td {
-	padding: 5px;
+	padding: 10px;
 	text-align: center;
 
 }
@@ -228,6 +258,7 @@ td {
 	display: grid;
 	gap: 30px;
 	background-color: rgb(251, 136, 20);
+	grid-template: auto repeat(1, 1fr) / repeat(4, 1fr);
 }
 
 
@@ -256,10 +287,6 @@ td {
 	padding: 10px;
 }
 
-.grilla1 {
-	grid-template: auto repeat(1, 1fr) / repeat(4, 1fr);
-
-}
 
 .grilla1 h2 {
 	color: white;
@@ -274,9 +301,6 @@ td {
 
 }
 
-.grilla1 article:nth-of-type(1)>* {
-	height: calc((100% - 15px / 2));
-}
 
 .grilla1 article:nth-of-type(1)>div {
 	margin: 20px;
@@ -289,7 +313,6 @@ td {
 }
 
 .grilla1 article:nth-of-type(2) {
-
 	background: url(assets/img/kyoto.jpg) center center;
 	background-size: cover;
 	color: white;
@@ -299,10 +322,8 @@ td {
 }
 
 .grilla1 article:nth-of-type(3) {
-
 	grid-row: 2 / 4;
 	grid-column: 4 / 4;
-
 }
 
 .grilla1 article:nth-of-type(3)>img {
@@ -402,7 +423,8 @@ td {
 
 	display: grid;
 	gap: 30px;
-	background-image: url(/assets/img/orange-blue-background.png);
+	padding: 100px;
+	background-image: url(./assets/img/orange-blue-background.png);
 	background-size: cover;
 }
 
@@ -434,6 +456,7 @@ td {
 .grilla2 h3,
 .grilla2 p {
 	color: white;
+
 }
 
 .grilla2 p {
@@ -444,6 +467,7 @@ td {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	/* justify-content: space-between; */
 }
 
 

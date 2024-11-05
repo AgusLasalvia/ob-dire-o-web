@@ -13,19 +13,27 @@
 		<!-- Header & Navbar -->
 		<header>
 			<a href="#">
-				<img src="" alt="Agencia de Viajes" />
+				<img src="./assets/img/logo.png" alt="Agencia de Viajes" />
 			</a>
 			<nav>
-				<a href="#coritzar">COTIZAR DETSINO</a>
+				<a href="#cotizar">COTIZAR DETSINO</a>
 				<a href="#pedidos">MÁS PEDIDOS</a>
 				<a href="#nuevos-destinos">NUEVOS DESTINOS</a>
 				<a href="#ofertas">OFERTAS</a>
 			</nav>
-			<a href=""><img src="/assets/icons/carrito.png" alt="" /></a>
+			<a href=""><img src="./assets/icons/carrito.png" alt="" /></a>
 		</header>
 
 		<!-- div flex0 faltante (HERO) -->
-
+		<section id="HERO" class="flex-centrado">
+			<div class="centrado-no-flex">
+				<h2>Tu proxima aventura comienza con un click</h2>
+				<div>
+					<p>Desde paraisos tropicales hasta ciudades vibrantes. Encuentra tu destino ideal con nosotros </p>
+					<button class="btn btn-secundario">Viajemos!</button>
+				</div>
+			</div>
+		</section>
 		<!-- Select #1 -->
 		<section class="flex-centrado flex1" id="cotizar">
 			<article>
@@ -36,7 +44,7 @@
 							<label for="mail">Mail<strong id="requerido">*</strong></label><br />
 							<input type="text" name="mail" id="" placeholder="" required /><br />
 							<label for="">Comentarios<strong id="requerido">*</strong></label><br />
-							<textarea name="" id=""></textarea>
+							<textarea name="" id="" required></textarea>
 						</div>
 						<div class="column">
 							<div>
@@ -48,7 +56,7 @@
 								<label for="">Ambas</label><br />
 							</div>
 							<div>
-								<input type="checkbox" name="" id="" />
+								<input type="checkbox" name="" id="" required />
 								<label for="">Soy cliente<strong id="requerido">*</strong></label><br />
 							</div>
 							<div>
@@ -68,7 +76,7 @@
 						</div>
 					</div>
 					<div class="button-centrado">
-						<input class="btn btn-primario" type="button" value="Cotizar" form="cotizacion" />
+						<input class="btn btn-primario" type="submit" value="Cotizar" form="cotizacion" />
 					</div>
 				</form>
 			</article>
@@ -117,7 +125,7 @@
 
 			<h2>MÁS PEDIDOS</h2>
 			<article>
-				<img src="/assets/img/madrid.jpg" alt="Madrid" />
+				<img src="./assets/img/madrid.jpg" alt="Madrid" />
 
 				<div>
 					<h3>Madrid</h3>
@@ -132,7 +140,7 @@
 				</div>
 			</article>
 			<article>
-				<img src="/assets/img/santorini.jpeg" alt="Santorini" />
+				<img src="./assets/img/santorini.jpeg" alt="Santorini" />
 				<div>
 					<div>
 						<h3>Santorini</h3>
@@ -161,7 +169,7 @@
 				<button class="btn btn-primario">Saber Mas</button>
 			</article>
 			<article>
-				<img src="/assets/img/petra.jpg" alt="Petra" />
+				<img src="./assets/img/petra.jpg" alt="Petra" />
 				<div>
 					<div>
 						<h3>Petra</h3>
@@ -180,11 +188,11 @@
 		</section>
 
 		<!-- Select #3 -->
-		<section class="flex3">
+		<section class="flex3" id="nuevos-destinos">
 			<div class="centrado-no-flex">
 				<h2>Nuevos Destinos</h2>
 				<article>
-					<img src="/assets/img/roma.jpg" alt="Roma" />
+					<img src="./assets/img/roma.jpg" alt="Roma" />
 					<div>
 						<div>
 							<p>Italia</p>
@@ -199,7 +207,7 @@
 					</div>
 				</article>
 				<article>
-					<img src="/assets/img/barcelona.jpeg" alt="Barcelona" />
+					<img src="./assets/img/barcelona.jpeg" alt="Barcelona" />
 					<div>
 						<div>
 							<p>España</p>
@@ -213,7 +221,7 @@
 					</div>
 				</article>
 				<article>
-					<img src="/assets/img/queenstown.jpg" alt="Queenstown" />
+					<img src="./assets/img/queenstown.jpg" alt="Queenstown" />
 					<div>
 						<div>
 							<p>Nueva Zelanda</p>
@@ -228,11 +236,11 @@
 				</article>
 			</div>
 		</section>
-		<section class="grilla2 ">
+		<section class="grilla2" id="ofertas">
 			<h2>Ofertas</h2>
 			<article>
 
-				<img src="/assets/img/new york.jpeg" alt="New York">
+				<img src="./assets/img/new york.jpeg" alt="New York">
 				<div>
 					<h3>Nueva York</h3>
 					<p>Nueva York, conocida como la "Gran Manzana", es una de las ciudades más emblemáticas del mundo. Famosa
@@ -244,7 +252,7 @@
 				</div>
 			</article>
 			<article>
-				<img src="/assets/img/buenos aires.png" alt="Buenos Aires">
+				<img src="./assets/img/buenos aires.png" alt="Buenos Aires">
 				<div>
 					<h3>Buenos Aires</h3>
 					<p>Buenos Aires, la capital argentina, es una ciudad llena de energía y vida. Conocida por su arquitectura
@@ -260,9 +268,9 @@
 		<footer class="flexbox">
 			<p>Realizado por Agustin Lasalvia en base al ejemplo</p>
 			<div>
-				<a href="/"><img src="/assets/icons/instagram.png" alt="Instagram"></a>
-				<a href="/"><img src="/assets/icons/x.png" alt="X"></a>
-				<a href="/"><img src="/assets/icons/correo.png" alt="Correo"></a>
+				<a href="/"><img src="./assets/icons/instagram.png" alt="Instagram"></a>
+				<a href="/"><img src="./assets/icons/x.png" alt="X"></a>
+				<a href="/"><img src="./assets/icons/correo.png" alt="Correo"></a>
 			</div>
 		</footer>
 
